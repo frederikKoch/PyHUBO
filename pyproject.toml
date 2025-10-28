@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyhubo"
-version = "0.1"
+version = "0.2.1"
 authors = [
   { name="Frederik Koch", email="frederik.koch@uni-hamburg.de" },
 ]
 description = "A python package for resource-efficient quantum optimization"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
