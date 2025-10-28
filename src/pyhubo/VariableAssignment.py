@@ -127,7 +127,7 @@ class VariableAssignment:
                     
                     # Check for conflicts: same variable with different values
                     if self._has_variable_conflict(key1, key2):
-                        continue  # Skip this term (contributes 0)
+                        raise NotImplementedError(f"Multiplication invalid, a variables can't have the same value at once. You tried to assign {key1} both value {value1} and {value2}")
                     
                     # Combine the frozensets (union of variable assignments)
                     combined_key = key1 | key2  # Union of frozensets

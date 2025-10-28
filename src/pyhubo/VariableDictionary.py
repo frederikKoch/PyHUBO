@@ -38,8 +38,8 @@ class VariableDictionary:
                 self._domains[var] = original_domain + additional_domain
                 self._aux_vals[var] = tuple([f"aux_{i}" for i in range(nbr_empty_indicies)])
         if domain_modified:
-            print("There are unused indicies in your Variable Dictionary, auxiliary values added to Variable Dictionary." \
-            "Consider adding a penalty term from .get_penalty() to penalize the unused indicies")
+            print("There are unused indicies in your Variable Dictionary, auxiliary values added to Variable Dictionary. " \
+            "Consider adding a penalty term from .get_penalty_term() to penalize the unused indicies")
         
         # Build bidirectional mappings per variable
         self._value_to_index = {}  # {var: {val: idx}}

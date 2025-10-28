@@ -141,7 +141,7 @@ class HuboHamiltonian:
         
         for variable in self._variable_dictionary.variables():
             domain_size = self._variable_dictionary.get_domain_size(variable)
-            required_bits = self._compute_required_bits(domain_size)
+            required_bits = self._variable_dictionary._compute_required_bits(domain_size)
             
             # Create list of PauliZ operators for this variable's bits
             pauli_list = []
@@ -325,7 +325,7 @@ class HuboHamiltonian:
         """
         status = "built" if self._hamiltonian_built else "not built"
         num_vars = len(self._variable_dictionary)
-        total_bits = sum(len(paulis) for paulis in self._qubit_structure.values())
+        total_bits = self._variable_dictionary.get_total_qubits()
         
         return (f"HuboHamiltonian(variables={num_vars}, "
                 f"total_qubits={total_bits}, "
