@@ -23,7 +23,7 @@ Traditional QUBO (Quadratic Unconstrained Binary Optimization) formulations ofte
 - **Automatic Constraint Handling**: Built-in conflict resolution and validation
 - **Flexible Variable Domains**: Support for discrete variables with arbitrary value sets
 - **Quantum Integration**: Direct conversion to quantum Hamiltonian representations
-- **Multiple Solver Examples**: Openjij and pennylane implementations are shown in example scripts
+- **Multiple Solver Examples**: Openjij and pennylane implementations are shown in [example](#examples) scripts
 
 ## Installation
 
@@ -31,3 +31,19 @@ Install PyHUBO from PyPI:
 
 ```bash
 pip install pyhubo
+```
+
+## Examples
+We illustrate the usage of Pyhubo on three distinct combinatorial optimization problems:
+
+- [Gate Assignment Problem](./examples/gap.ipynb)
+- [Integer Programming](./examples/ip.ipynb)
+- [Maximum k-colorable Subgraph Problem](./examples/mkcs.ipynb)
+
+An example for dealing with problems where the domain size is not to the power of two is also given in the [Maximum k-colorable Subgraph Problem](./examples/mkcs.ipynb) script.
+
+## Issues
+Please email me (frederik.koch@uni-hamburg.de) in case you spot any issues or if you have any suggestions to improve pyhubo.
+
+## Citation
+Citation for this work is provided in the GitHub repository ("About > Cite this repository").
