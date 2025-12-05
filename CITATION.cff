@@ -23,6 +23,7 @@ preferred-citation:
       given-names: Dieter
   title: "Resource-Efficient Quantum Optimization via Higher-Order Encoding"
   url: "https://arxiv.org/abs/2511.17545"
+  year: '2025'
 
   references:
   - type: software

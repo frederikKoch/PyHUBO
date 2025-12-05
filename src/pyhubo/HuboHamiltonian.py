@@ -209,7 +209,7 @@ class HuboHamiltonian:
         self._hamiltonian_coeffs = {}
 
         for coefficient_key, coeff_value in self._variable_assignment.items():
-            if coefficient_key == ((),):
+            if len(coefficient_key) == 0:
                 # Constant Term only contributes through Identity
                 hubo_coefficients = [PauliZ()]
                 hubo_vals = [coeff_value]
